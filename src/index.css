@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,77 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#navbar {
+  background-color: #F55A5A;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+#global-icon {
+  width: 40px;
+  margin-right: 15px;
+}
+
+#title {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 3px 3px 11px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 11px -1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 11px -1px rgba(0,0,0,0.75);
+  border-radius: 8px;
+}
+
+.location-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.poster {
+  width: 175px;
+  height: 250px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+}
+
+#card-container {
+  padding: 50px;
+}
+
+.card-title > p {
+  margin-right: 25px;
+}
+
+#card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title > a:visited {
+  color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .poster {
+    width: 100%;
+  }
 }
